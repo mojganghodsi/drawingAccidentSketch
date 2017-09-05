@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#FF554411">
+        <Button
+            android:id="@+id/strokeWidthPlusButton"
+            android:text="SW+"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="6dp"
+            />
+
+        <Button
+            android:id="@+id/strokeWidthMinusButton"
+            android:text="SW-"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="6dp"
+            />
+
+        <Button
+            android:id="@+id/changeColorButton"
+            android:text="Color"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="6dp"
+            />
+
+        <Button
+            android:id="@+id/undoButton"
+            android:text="Undo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="6dp"
+            />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="6dp" />
+
+    </LinearLayout>
+
+    <me.panavtec.drawableview.DrawableView
+        android:id="@+id/paintView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
